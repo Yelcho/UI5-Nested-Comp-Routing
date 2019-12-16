@@ -1,7 +1,7 @@
 {
 	"_version": "1.8.0",
 	"sap.app": {
-		"id": "yelcho.mydemo.nestcomprouting",
+		"id": "yelcho.mydemo.nestcomproute",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
@@ -21,7 +21,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "yelcho.mydemo.nestcomprouting.view.App",
+			"viewName": "yelcho.mydemo.nestcomproute.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "app"
@@ -31,7 +31,7 @@
 				"name": "yelcho.reuse.suppliers",
 				"settings": {},
 				"componentData": {
-					"parentComponentName": "yelcho.mydemo.nestcomprouting.Component"
+					"parentComponentName": "yelcho.mydemo.nestcomproute.Component"
 				},
 				"lazy": true
 			},
@@ -39,7 +39,7 @@
 				"name": "yelcho.reuse.categories",
 				"settings": {},
 				"componentData": {
-					"parentComponentName": "yelcho.mydemo.nestcomprouting.Component"
+					"parentComponentName": "yelcho.mydemo.nestcomproute.Component"
 				},
 				"lazy": true
 			},
@@ -47,7 +47,7 @@
 				"name": "yelcho.reuse.products",
 				"settings": {},
 				"componentData": {
-					"parentComponentName": "yelcho.mydemo.nestcomprouting.Component"
+					"parentComponentName": "yelcho.mydemo.nestcomproute.Component"
 				},
 				"lazy": true
 			}
@@ -62,7 +62,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "yelcho.mydemo.nestcomprouting.i18n.i18n"
+					"bundleName": "yelcho.mydemo.nestcomproute.i18n.i18n"
 				}
 			}
 		},
@@ -77,7 +77,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "yelcho.mydemo.nestcomprouting.view",
+				"viewPath": "yelcho.mydemo.nestcomproute.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"transition": "slide",

@@ -1,4 +1,4 @@
-<mvc:View controllerName="yelcho.mydemo.nestcomprouting.controller.Home" 
+<mvc:View controllerName="yelcho.mydemo.nestcomproute.controller.Home" 
   xmlns:mvc="sap.ui.core.mvc" 
   xmlns="sap.m" 
   displayBlock="true">

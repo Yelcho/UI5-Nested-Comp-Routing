@@ -2,7 +2,7 @@ sap.ui.define(
 	["sap/ui/core/UIComponent", "sap/ui/model/json/JSONModel"],
 	function(UIComponent, JSONModel) {
 		"use strict"
-		return UIComponent.extend("yelcho.mydemo.nestcomprouting.Component", {
+		return UIComponent.extend("yelcho.mydemo.nestcomproute.Component", {
 			metadata: {
 				manifest: "json"
 			},
