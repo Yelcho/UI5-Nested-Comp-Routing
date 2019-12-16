@@ -16,7 +16,7 @@
       <f:Form id="FormDisplay354" 
         editable="false">
         <f:title>
-          <core:Title text="{i18n>detailViewTitle}" />
+          <core:Title text="{CategoryName} {i18n>detailViewTitle}" />
         </f:title>
         <f:layout>
           <f:ResponsiveGridLayout labelSpanXL="3" 

@@ -15,6 +15,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/base/Log"], function(
 			Log.info(this.getView().getControllerName(), "_onRouteMatched")
 		},
 		onSideNavButtonPress: function() {
+			Log.info(this.getView().getControllerName(), "onSideNavButtonPress")
 			var toolPage = this.byId("toolPage")
 			toolPage.setSideExpanded(!toolPage.getSideExpanded())
 		},

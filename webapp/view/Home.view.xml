@@ -5,7 +5,7 @@
   <MessagePage title="{i18n>homePageTitle}" 
     text="This is the {i18n>homePageTitle} view" 
     enableFormattedText="true" 
-    description="Welcome Home {jsonModel>/recipient/name}" 
+    description="Welcome Home {appModel>/recipient/name}" 
     icon="sap-icon://home">
   </MessagePage>
 </mvc:View>

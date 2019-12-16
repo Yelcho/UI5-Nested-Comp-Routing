@@ -71,14 +71,31 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 						.getBindingContext()
 						.getObject().SupplierID
 			)
+			// this.getOwnerComponent()
+			// 	.getRouter()
+			// 	.navTo("suppliers", {
+			// 		id: oEvent
+			// 			.getSource()
+			// 			.getBindingContext()
+			// 			.getObject().SupplierID
+			// 	})
 			this.getOwnerComponent()
-				.getRouter()
-				.navTo("suppliers", {
-					id: oEvent
-						.getSource()
-						.getBindingContext()
-						.getObject().SupplierID
-				})
+				.getMainRouter()
+				.navTo(
+					"suppliers",
+					{},
+					{
+						suppliers: {
+							route: "detail",
+							parameters: {
+								id: oEvent
+									.getSource()
+									.getBindingContext()
+									.getObject().SupplierID
+							}
+						}
+					}
+				)
 		},
 		onPressCategory: function(oEvent) {
 			Log.info(
@@ -89,14 +106,31 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 						.getBindingContext()
 						.getObject().CategoryID
 			)
+			// this.getOwnerComponent()
+			// 	.getRouter()
+			// 	.navTo("categories", {
+			// 		id: oEvent
+			// 			.getSource()
+			// 			.getBindingContext()
+			// 			.getObject().categories
+			// 	})
 			this.getOwnerComponent()
-				.getRouter()
-				.navTo("categories", {
-					id: oEvent
-						.getSource()
-						.getBindingContext()
-						.getObject().CategoryID
-				})
+				.getMainRouter()
+				.navTo(
+					"categories",
+					{},
+					{
+						categories: {
+							route: "detail",
+							parameters: {
+								id: oEvent
+									.getSource()
+									.getBindingContext()
+									.getObject().CategoryID
+							}
+						}
+					}
+				)
 		}
 	})
 })
