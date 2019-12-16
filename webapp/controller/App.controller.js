@@ -3,7 +3,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/base/Log"], function(
 	Log
 ) {
 	"use strict"
-	return Controller.extend("yelcho.mydemo.comprouting.controller.App", {
+	return Controller.extend("yelcho.mydemo.nestcomprouting.controller.App", {
 		onInit: function() {
 			Log.info(this.getView().getControllerName(), "onInit")
 
