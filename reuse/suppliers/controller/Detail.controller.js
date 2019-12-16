@@ -65,16 +65,8 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 					oEvent
 						.getSource()
 						.getBindingContext()
-						.getObject().ProductID
+						.getProperty("ProductID")
 			)
-			// this.getOwnerComponent()
-			// 	.getRouter()
-			// 	.navTo("products", {
-			// 		id: oEvent
-			// 			.getSource()
-			// 			.getBindingContext()
-			// 			.getObject().ProductID
-			// 	})
 			this.getOwnerComponent()
 				.getMainRouter()
 				.navTo(
@@ -87,7 +79,7 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 								id: oEvent
 									.getSource()
 									.getBindingContext()
-									.getObject().ProductID
+									.getProperty("ProductID")
 							}
 						}
 					}

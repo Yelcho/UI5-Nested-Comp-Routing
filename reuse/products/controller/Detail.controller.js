@@ -69,16 +69,8 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 					oEvent
 						.getSource()
 						.getBindingContext()
-						.getObject().SupplierID
+						.getProperty("SupplierID")
 			)
-			// this.getOwnerComponent()
-			// 	.getRouter()
-			// 	.navTo("suppliers", {
-			// 		id: oEvent
-			// 			.getSource()
-			// 			.getBindingContext()
-			// 			.getObject().SupplierID
-			// 	})
 			this.getOwnerComponent()
 				.getMainRouter()
 				.navTo(
@@ -91,7 +83,7 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 								id: oEvent
 									.getSource()
 									.getBindingContext()
-									.getObject().SupplierID
+									.getProperty("SupplierID")
 							}
 						}
 					}
@@ -104,16 +96,8 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 					oEvent
 						.getSource()
 						.getBindingContext()
-						.getObject().CategoryID
+						.getProperty("CategoryID")
 			)
-			// this.getOwnerComponent()
-			// 	.getRouter()
-			// 	.navTo("categories", {
-			// 		id: oEvent
-			// 			.getSource()
-			// 			.getBindingContext()
-			// 			.getObject().categories
-			// 	})
 			this.getOwnerComponent()
 				.getMainRouter()
 				.navTo(
@@ -126,7 +110,7 @@ sap.ui.define(["yelcho/reuse/BaseController", "sap/base/Log"], function(
 								id: oEvent
 									.getSource()
 									.getBindingContext()
-									.getObject().CategoryID
+									.getProperty("CategoryID")
 							}
 						}
 					}
