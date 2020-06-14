@@ -13,6 +13,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/base/Log"], function (
 				.getRouter()
 				.attachRouteMatched(this._onRouteMatched, this)
 		},
+		_dummyMethod: function () {
+			// This is a test of VS code github plugin @grahamrobbo issue #1
+			// #1
+		},
 		_onRouteMatched: function (oEvent) {
 			Log.info(this.getView().getControllerName(), "_onRouteMatched")
 		},
