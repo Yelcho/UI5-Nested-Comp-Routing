@@ -3,8 +3,6 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/base/Log"], function (
 	Log
 ) {
 	"use strict"
-	// TODO #1 test issue created from VS code
-	// now working on this issue
 	return Controller.extend("yelcho.mydemo.nestcomproute.controller.App", {
 		onInit: function () {
 			Log.info(this.getView().getControllerName(), "onInit")
@@ -12,10 +10,6 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "sap/base/Log"], function (
 			this.getOwnerComponent()
 				.getRouter()
 				.attachRouteMatched(this._onRouteMatched, this)
-		},
-		_dummyMethod: function () {
-			// This is a test of VS code github plugin @grahamrobbo issue #1
-			// #1
 		},
 		_onRouteMatched: function (oEvent) {
 			Log.info(this.getView().getControllerName(), "_onRouteMatched")
